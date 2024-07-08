@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+        <record id="view_custom_crm_visit_form" model="ir.ui.view">
+            <field name="name">view.custom.crm.visit.form</field>
+            <field name="model">custom_crm.visit</field>
+            <field name="arch" type="xml">
+                <form string="Visita">
+                    <sheet>
+                        <group name="group_top">
+
+                            <group name="group_left" string="string">
+                                <field name="customer" />
+                                <field name="date" />
+                                <field name="type" />
+                            </group>
+
+                            <group name="group_right" string="string">
+                                <field name="name" />
+                                <field name="done" />
+                            </group>
+                            
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record> 
+
+        <record id="view_custom_crm_visit_tree" model="ir.ui.view">
+            <field name="name">view.custom.crm.visit.tree</field>
+            <field name="model">custom_crm.visit</field>
+            <field name="arch" type="xml">
+                <tree string="Visit">
+                    <field name="customer" />
+                    <field name="name" />
+                    <field name="type" />
+                    <field name="date" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_custom_crm_view" model="ir.actions.act_window">
+            <field name="name">action.custom.crm.view</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">custom_crm.view</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Visitas
+                </p>
+
+                <p>
+                    Click "Nuevo" para anadir nuevos elementos.
+                </p>
+            </field>
+        </record>
+
+        <menuitem
+            id="menu_custom_crm_root"
+            name="Custom CRM"
+            sequence="10"/>
+
+        <menuitem
+            id="menu_custom_crm_visit_categoria"
+            name="Operaciones"
+            parent= "menu_custom_crm_root"
+            sequence="0"/>
+
+        <menuitem
+            id="menu_custom_crm_visit"
+            name="Visitas"
+            parent="menu_custom_crm_visit_categoria"
+            sequence="0"
+            action="action_custom_crm_view"/>
+    
+    </data>
+    
+
+</odoo>
