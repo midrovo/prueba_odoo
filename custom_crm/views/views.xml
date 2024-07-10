@@ -144,16 +144,22 @@
             </field>
         </record>
 
-        <!-- <record id="view_account_payment_form" model="ir.ui.view">
+        <record id="view_account_payment_form" model="ir.ui.view">
             <field name="name">view.account.payment.form</field>
             <field name="model">account.payment</field>
             <field name="inherit_id" ref="account.view_account_payment_form" />
             <field name="arch" type="xml">
-                <xpath expr="//field[@name='payment_method_line_id']" position="after">
-                    <field name="partner_bank_id" />                    
+                <xpath expr="//field[@name='is_internal_transfer']" position="replace">
+                    <field name="is_internal_transfer" readonly="1"/>
+                </xpath>
+                <xpath expr="//field[@name='payment_type']" position="replace">
+                    <field name="payment_type" readonly="0" required="0"/>
+                </xpath>
+                <xpath expr="//field[@name='partner_bank_id']" position="replace">
+                    <field name="partner_bank_id" invisible="1" readonly="0"/>
                 </xpath>
             </field>
-        </record> -->
+        </record>
 
         <menuitem
             id="menu_custom_crm_root"
