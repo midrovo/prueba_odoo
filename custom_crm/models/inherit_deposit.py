@@ -10,3 +10,7 @@ class Deposit(models.Model):
         required=False,
         default='outbound')
     partner_bank_id = fields.Many2one(comodel_name='res.partner.bank', invisible=True, readonly=False)
+
+    @api.onchange('payment_type')
+    def _onchange_payment_type(self):
+        pass
