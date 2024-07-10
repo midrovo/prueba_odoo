@@ -8,7 +8,8 @@ class Deposit(models.Model):
         [('inbound', 'Recibir'), ('outbound', 'Enviar')],
         readonly=False,
         required=False,
-        default='outbound')
+        default='outbound',
+        widget='check')
     partner_bank_id = fields.Many2one(comodel_name='res.partner.bank', invisible=True, readonly=False)
 
     @api.onchange('payment_type')
