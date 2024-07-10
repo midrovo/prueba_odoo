@@ -3,4 +3,6 @@ from odoo import models, fields, api
 class Deposit(models.Model):
     _inherit = 'account.payment'
 
-    partner_bank_id = fields.Many2one(invisible=True)
+    is_internal_transfer = fields.Boolean(readonly=True)
+    payment_type = fields.Selection(readonly=False, required=False)
+    partner_bank_id = fields.Many2one(invisible=True, readonly=False)
