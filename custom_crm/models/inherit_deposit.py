@@ -29,7 +29,6 @@ class Deposit(models.Model):
             ('F', 'Facturado')
         ],
         readonly=True,
-        required=True
     )
     
     @api.model
