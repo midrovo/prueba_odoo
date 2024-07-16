@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <record id="view_account_payment_form" model="ir.ui.view">
+        <!-- <record id="view_account_payment_form" model="ir.ui.view">
             <field name="name">view.account.payment.form</field>
             <field name="model">account.payment</field>
             <field name="inherit_id" ref="account.view_account_payment_form" />
@@ -12,7 +12,7 @@
                     <field name="estado" />
                 </xpath>
             </field>
-        </record>
+        </record> -->
 
         <record id="action_account_payment_visit_view" model="ir.actions.act_window">
             <field name="name">Depositos</field>
