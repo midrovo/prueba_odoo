@@ -18,7 +18,7 @@ class Deposit(models.Model):
     )
 
     journal_id = fields.Many2one(
-        comodel_name='account_journal',
+        comodel_name='account.journal',
         required=False        
     )
 
