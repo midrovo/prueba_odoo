@@ -30,8 +30,8 @@
 
         <menuitem
             id="menu_account_payment_deposit"
-            parent="account.menu_finance_receivables"
             name="Depositos"
+            parent="account.menu_finance_receivables""
             sequence="0"
             action="action_account_payment_visit_view"/>
     </data>
