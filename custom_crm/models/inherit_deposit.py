@@ -21,6 +21,14 @@ class Deposit(models.Model):
         comodel_name='account_journal',
         required=False        
     )
+
+    estado = fields.Selection(
+        [
+            ('S', 'Subido'),
+            ('C', 'Confirmado'),
+            ('F', 'Facturado')
+        ]
+    )
     
     @api.model
     def load(self, data):
