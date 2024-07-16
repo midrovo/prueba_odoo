@@ -18,7 +18,7 @@
         </record>
 
         <menuitem
-            id="model_name_menu"
+            id="menu_account_payment_deposit"
             parent="account.menu_finance_receivables"
             name="Depositos"
             sequence="0"/>
