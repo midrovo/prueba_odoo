@@ -14,8 +14,6 @@
     "depends": ["base", "sale_management"],
 
     "data": [
-        "views/views.xml",
-        "views/templates.xml",
-        "reports/visit.xml"
+        "views/views.xml"
     ]
 }
