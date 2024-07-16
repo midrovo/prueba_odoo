@@ -17,11 +17,26 @@
             </field>
         </record>
 
+        <record id="action_account_payment_visit_view" model="ir.actions.act_window">
+            <field name="name">Depositos</field>
+            <field name="res_model">account.payment</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Depositos
+                </p>
+                <p>
+                    Click "Nuevo" para añadir nuevos depositos
+                </p>
+            </field>
+        </record>
+
         <menuitem
             id="menu_account_payment_deposit"
             parent="account.menu_finance_receivables"
             name="Depositos"
-            sequence="0"/>
+            sequence="0"
+            action="action_account_payment_visit_view"/>
         
     
     </data>
