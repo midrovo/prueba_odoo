@@ -8,9 +8,9 @@
                 <!-- <xpath expr="//field[@name='state']" position="attributes">
                     <attribute name="invisible">1</attribute>
                 </xpath> -->
-                <xpath expr="//field[@name='state']" position="after">
+                <!-- <xpath expr="//field[@name='state']" position="after">
                     <field name="estado" />
-                </xpath>
+                </xpath> -->
             </field>
         </record>
 
