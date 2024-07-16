@@ -11,7 +11,7 @@
     "category": "Uncategorized",
     "version": "0.1",
 
-    "depends": ["base", "sale_management"],
+    "depends": ["base", "account"],
 
     "data": [
         "views/views.xml"
