@@ -5,10 +5,10 @@
             <field name="model">account.payment</field>
             <field name="inherit_id" ref="account.view_account_payment_form" />
             <field name="arch" type="xml">
-                <xpath expr="//field:[@name='state']" position="attributes">
+                <xpath expr="//field[@name='state']" position="attributes">
                     <attribute name="invisible">1</attribute>
                 </xpath>
-                <xpath expr="//field:[@name='state']" position="after">
+                <xpath expr="//field[@name='state']" position="after">
                     <field name="estado" />
                 </xpath>
             </field>
