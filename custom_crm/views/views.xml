@@ -5,9 +5,9 @@
             <field name="model">account.payment</field>
             <field name="inherit_id" ref="account.view_account_payment_form" />
             <field name="arch" type="xml">
-                <xpath expr="//field[@name='state']" position="attributes">
+                <!-- <xpath expr="//field[@name='state']" position="attributes">
                     <attribute name="invisible">1</attribute>
-                </xpath>
+                </xpath> -->
                 <xpath expr="//field[@name='state']" position="after">
                     <field name="estado" />
                 </xpath>
@@ -31,7 +31,7 @@
         <menuitem
             id="menu_account_payment_deposit"
             name="Depositos"
-            parent="account.menu_finance_receivables""
+            parent="account.menu_finance_receivables"
             sequence="0"
             action="action_account_payment_visit_view"/>
     </data>
