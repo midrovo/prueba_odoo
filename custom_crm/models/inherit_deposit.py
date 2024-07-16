@@ -28,7 +28,7 @@ class Deposit(models.Model):
             ('C', 'Confirmado'),
             ('F', 'Facturado')
         ],
-        readonly=True
+        readonly=True,
         required=True
     )
     
