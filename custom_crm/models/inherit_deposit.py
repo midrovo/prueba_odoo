@@ -36,6 +36,7 @@ class Deposit(models.Model):
     
     @api.model
     def load(self, data):
+        logger.info()
         try:
             for record in data:
                 if 'codigo_ref' in record:
