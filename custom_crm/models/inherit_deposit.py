@@ -1,4 +1,7 @@
 from odoo import models, fields, api, exceptions
+import logging
+
+logger = logging.getLogger(__name__)
 
 class Deposit(models.Model):
     _inherit = 'account.payment'
