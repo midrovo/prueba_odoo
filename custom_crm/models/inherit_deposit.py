@@ -1,7 +1,7 @@
 from odoo import models, fields, api, exceptions
 import logging
 
-logger = logging.getLogger(__name__)
+_logger = logging.getLogger(__name__)
 
 class Deposit(models.Model):
     _inherit = 'account.payment'
@@ -36,7 +36,7 @@ class Deposit(models.Model):
     
     @api.model
     def load(self, data):
-        logger.info()
+        _logger.info("DEPURANDO")
         try:
             for record in data:
                 if 'codigo_ref' in record:
