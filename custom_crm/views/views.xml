@@ -19,6 +19,7 @@
 
         <record id="action_account_payment_visit_view" model="ir.actions.act_window">
             <field name="name">Depositos</field>
+            <field name="type">ir.actions.act_window</field>
             <field name="res_model">account.payment</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
